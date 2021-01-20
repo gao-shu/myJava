@@ -18,12 +18,12 @@ public class test01 implements Runnable {
 
         long time = end - start;//计算消耗时间
         String string = "";
-        if (string != null) {
-
+        for (int j = 0; j < 100; j++) {
+            System.out.println(j);
         }
 
         System.out.println(time);
-
+        //dfgsdsdfdffasfd asdfasdf  sdadf asdfasdsdfgsdfg sdfgsdfedfwse  fgsdf
         System.out.println("一秒计算了" + 1000000000 / time * 1000 + "次");//计算并输出一秒计算次数.
     }
 
