@@ -2,7 +2,7 @@
 
 public class test01 implements Runnable {
 
-    public static void main(String[] args) throws InterruptedException {
+    public static void main(String[] args) {
         long i = 0;
         long start = System.currentTimeMillis();//记录开始时间
         while (i <= 1000000000) {
@@ -17,7 +17,6 @@ public class test01 implements Runnable {
         }
 
         long time = end - start;//计算消耗时间
-        String string = "";
         for (int j = 0; j < 100; j++) {
             System.out.println(j);
         }
@@ -30,6 +29,7 @@ public class test01 implements Runnable {
     @Override
     public void run() {
         int a = 1;
+        System.out.println(a);
     }
 
     @Override
